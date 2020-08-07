@@ -1,0 +1,4 @@
+roslaunch zed_nodelet_example zed_laserscan_nodelet.launch camera_model:=zed /zed/scan:=/scan /zed/zed_nodelet/odom:=/odom
+rosrun map_server map_server ~/maphouse.yaml
+rosrun map_server map_saver -f name_of_map
+rosrun gmapping slam_gmapping scan:=base_scan
