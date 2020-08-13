@@ -80,6 +80,16 @@ install/fast: preinstall/fast
 	/usr/bin/cmake -P cmake_install.cmake
 .PHONY : install/fast
 
+# Special rule for the target list_install_components
+list_install_components:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\""
+.PHONY : list_install_components
+
+# Special rule for the target list_install_components
+list_install_components/fast: list_install_components
+
+.PHONY : list_install_components/fast
+
 # Special rule for the target install/local
 install/local: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
@@ -103,15 +113,16 @@ test/fast: test
 
 .PHONY : test/fast
 
-# Special rule for the target list_install_components
-list_install_components:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\""
-.PHONY : list_install_components
+# Special rule for the target rebuild_cache
+rebuild_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
+	/usr/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+.PHONY : rebuild_cache
 
-# Special rule for the target list_install_components
-list_install_components/fast: list_install_components
+# Special rule for the target rebuild_cache
+rebuild_cache/fast: rebuild_cache
 
-.PHONY : list_install_components/fast
+.PHONY : rebuild_cache/fast
 
 # Special rule for the target edit_cache
 edit_cache:
@@ -123,17 +134,6 @@ edit_cache:
 edit_cache/fast: edit_cache
 
 .PHONY : edit_cache/fast
-
-# Special rule for the target rebuild_cache
-rebuild_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/usr/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
-.PHONY : rebuild_cache
-
-# Special rule for the target rebuild_cache
-rebuild_cache/fast: rebuild_cache
-
-.PHONY : rebuild_cache/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -168,19 +168,19 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
-robot_setup_tf/CMakeFiles/tf_listener.dir/rule:
-	cd /home/dev/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 robot_setup_tf/CMakeFiles/tf_listener.dir/rule
-.PHONY : robot_setup_tf/CMakeFiles/tf_listener.dir/rule
+robot_setup_tf/CMakeFiles/tf_generate_messages_eus.dir/rule:
+	cd /home/dev/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 robot_setup_tf/CMakeFiles/tf_generate_messages_eus.dir/rule
+.PHONY : robot_setup_tf/CMakeFiles/tf_generate_messages_eus.dir/rule
 
 # Convenience name for target.
-tf_listener: robot_setup_tf/CMakeFiles/tf_listener.dir/rule
+tf_generate_messages_eus: robot_setup_tf/CMakeFiles/tf_generate_messages_eus.dir/rule
 
-.PHONY : tf_listener
+.PHONY : tf_generate_messages_eus
 
 # fast build rule for target.
-tf_listener/fast:
-	cd /home/dev/catkin_ws/build && $(MAKE) -f robot_setup_tf/CMakeFiles/tf_listener.dir/build.make robot_setup_tf/CMakeFiles/tf_listener.dir/build
-.PHONY : tf_listener/fast
+tf_generate_messages_eus/fast:
+	cd /home/dev/catkin_ws/build && $(MAKE) -f robot_setup_tf/CMakeFiles/tf_generate_messages_eus.dir/build.make robot_setup_tf/CMakeFiles/tf_generate_messages_eus.dir/build
+.PHONY : tf_generate_messages_eus/fast
 
 # Convenience name for target.
 robot_setup_tf/CMakeFiles/tf_broadcaster.dir/rule:
@@ -196,6 +196,81 @@ tf_broadcaster: robot_setup_tf/CMakeFiles/tf_broadcaster.dir/rule
 tf_broadcaster/fast:
 	cd /home/dev/catkin_ws/build && $(MAKE) -f robot_setup_tf/CMakeFiles/tf_broadcaster.dir/build.make robot_setup_tf/CMakeFiles/tf_broadcaster.dir/build
 .PHONY : tf_broadcaster/fast
+
+# Convenience name for target.
+robot_setup_tf/CMakeFiles/tf_generate_messages_cpp.dir/rule:
+	cd /home/dev/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 robot_setup_tf/CMakeFiles/tf_generate_messages_cpp.dir/rule
+.PHONY : robot_setup_tf/CMakeFiles/tf_generate_messages_cpp.dir/rule
+
+# Convenience name for target.
+tf_generate_messages_cpp: robot_setup_tf/CMakeFiles/tf_generate_messages_cpp.dir/rule
+
+.PHONY : tf_generate_messages_cpp
+
+# fast build rule for target.
+tf_generate_messages_cpp/fast:
+	cd /home/dev/catkin_ws/build && $(MAKE) -f robot_setup_tf/CMakeFiles/tf_generate_messages_cpp.dir/build.make robot_setup_tf/CMakeFiles/tf_generate_messages_cpp.dir/build
+.PHONY : tf_generate_messages_cpp/fast
+
+# Convenience name for target.
+robot_setup_tf/CMakeFiles/tf_generate_messages_py.dir/rule:
+	cd /home/dev/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 robot_setup_tf/CMakeFiles/tf_generate_messages_py.dir/rule
+.PHONY : robot_setup_tf/CMakeFiles/tf_generate_messages_py.dir/rule
+
+# Convenience name for target.
+tf_generate_messages_py: robot_setup_tf/CMakeFiles/tf_generate_messages_py.dir/rule
+
+.PHONY : tf_generate_messages_py
+
+# fast build rule for target.
+tf_generate_messages_py/fast:
+	cd /home/dev/catkin_ws/build && $(MAKE) -f robot_setup_tf/CMakeFiles/tf_generate_messages_py.dir/build.make robot_setup_tf/CMakeFiles/tf_generate_messages_py.dir/build
+.PHONY : tf_generate_messages_py/fast
+
+# Convenience name for target.
+robot_setup_tf/CMakeFiles/tf_generate_messages_lisp.dir/rule:
+	cd /home/dev/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 robot_setup_tf/CMakeFiles/tf_generate_messages_lisp.dir/rule
+.PHONY : robot_setup_tf/CMakeFiles/tf_generate_messages_lisp.dir/rule
+
+# Convenience name for target.
+tf_generate_messages_lisp: robot_setup_tf/CMakeFiles/tf_generate_messages_lisp.dir/rule
+
+.PHONY : tf_generate_messages_lisp
+
+# fast build rule for target.
+tf_generate_messages_lisp/fast:
+	cd /home/dev/catkin_ws/build && $(MAKE) -f robot_setup_tf/CMakeFiles/tf_generate_messages_lisp.dir/build.make robot_setup_tf/CMakeFiles/tf_generate_messages_lisp.dir/build
+.PHONY : tf_generate_messages_lisp/fast
+
+# Convenience name for target.
+robot_setup_tf/CMakeFiles/tf_listener.dir/rule:
+	cd /home/dev/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 robot_setup_tf/CMakeFiles/tf_listener.dir/rule
+.PHONY : robot_setup_tf/CMakeFiles/tf_listener.dir/rule
+
+# Convenience name for target.
+tf_listener: robot_setup_tf/CMakeFiles/tf_listener.dir/rule
+
+.PHONY : tf_listener
+
+# fast build rule for target.
+tf_listener/fast:
+	cd /home/dev/catkin_ws/build && $(MAKE) -f robot_setup_tf/CMakeFiles/tf_listener.dir/build.make robot_setup_tf/CMakeFiles/tf_listener.dir/build
+.PHONY : tf_listener/fast
+
+# Convenience name for target.
+robot_setup_tf/CMakeFiles/tf_generate_messages_nodejs.dir/rule:
+	cd /home/dev/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 robot_setup_tf/CMakeFiles/tf_generate_messages_nodejs.dir/rule
+.PHONY : robot_setup_tf/CMakeFiles/tf_generate_messages_nodejs.dir/rule
+
+# Convenience name for target.
+tf_generate_messages_nodejs: robot_setup_tf/CMakeFiles/tf_generate_messages_nodejs.dir/rule
+
+.PHONY : tf_generate_messages_nodejs
+
+# fast build rule for target.
+tf_generate_messages_nodejs/fast:
+	cd /home/dev/catkin_ws/build && $(MAKE) -f robot_setup_tf/CMakeFiles/tf_generate_messages_nodejs.dir/build.make robot_setup_tf/CMakeFiles/tf_generate_messages_nodejs.dir/build
+.PHONY : tf_generate_messages_nodejs/fast
 
 src/tf_broadcaster.o: src/tf_broadcaster.cpp.o
 
@@ -259,13 +334,18 @@ help:
 	@echo "... depend"
 	@echo "... install/strip"
 	@echo "... install"
-	@echo "... tf_listener"
-	@echo "... tf_broadcaster"
+	@echo "... list_install_components"
 	@echo "... install/local"
 	@echo "... test"
-	@echo "... list_install_components"
-	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... tf_generate_messages_eus"
+	@echo "... tf_broadcaster"
+	@echo "... edit_cache"
+	@echo "... tf_generate_messages_cpp"
+	@echo "... tf_generate_messages_py"
+	@echo "... tf_generate_messages_lisp"
+	@echo "... tf_listener"
+	@echo "... tf_generate_messages_nodejs"
 	@echo "... src/tf_broadcaster.o"
 	@echo "... src/tf_broadcaster.i"
 	@echo "... src/tf_broadcaster.s"

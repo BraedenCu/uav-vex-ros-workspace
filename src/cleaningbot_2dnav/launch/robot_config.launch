@@ -4,7 +4,8 @@
   <arg name="camera_model" value="zed"/>
  </include>
  <remap from="scan" to="scan"/>
- <remap from="/zed/zed_nodelet/odom" to="odom" />
+ <include file="$(find rtimulib_ros)/launch/rtimulib_ros.launch">
+ <remap from="/imu/data" to="odom" />
 
 </launch> 
 
