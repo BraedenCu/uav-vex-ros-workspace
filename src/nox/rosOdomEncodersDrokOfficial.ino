@@ -15,7 +15,10 @@ Encoder myEnc(3, 5);
 
 float x, z;
 
-//int enA = 5, in1 = 3, in2 = 4, enB = 6, in3 = 2, in4 = 7, enC = 10, in5 = 12, in6 = 11, enD = 9, in7 = 13, in8 = 8;
+int enA = 8, in1 = 9, in2 = 10, enB = 11, in3 = 12, in4 = 13;
+
+//enA = 5, in1 = 3, in2 = 4, enB = 6, in3 = 2, in4 = 7, enC = 10, in5 = 12, in6 = 11, enD = 9, in7 = 13, in8 = 8;
+
 
 long oldPosition = -999, oldPosition2 = -999;
 long pos_left = 0, pos_right = 0;      //encoder positions
@@ -78,7 +81,6 @@ void setup() {
   nh.subscribe(sub);
   nh.advertise(speed_pub);
 
-  // bruh
   //initialize motor controller
   //pinMode(enA, OUTPUT);
   //pinMode(in1, OUTPUT);
