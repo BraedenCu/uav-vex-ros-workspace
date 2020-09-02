@@ -57,6 +57,12 @@ const double PID_right_param[] = { 0, 0, 0.1 }; //Respectively Kp, Ki and Kd for
 PID PID_leftMotor(&actual_left, &speed_cmd_left, &speed_req_left, PID_left_param[0], PID_left_param[1], PID_left_param[2], DIRECT);          //Setting up the PID for left motor
 PID PID_rightMotor(&actual_right, &speed_cmd_right, &speed_req_right, PID_right_param[0], PID_right_param[1], PID_right_param[2], DIRECT);   //Setting up the PID for right motor
 
+static inline int8_t sgn(int val) {
+ if (val < 0) return -1;
+ if (val==0) return 0;
+ return 1;
+}
+
 ros::NodeHandle nh;
 
 void velcallback(const geometry_msgs::Twist& cmd_vel) {
@@ -114,15 +120,52 @@ void loop() {
     pos_left = getEncoderTwoPosition();
     pos_right = getEncoderOnePosition();
 
-
     actual_right=(pos_right - old_right)/encoder_cpr;
     actual_left=((pos_left - old_left)/encoder_cpr)*-1;
 
     old_left = pos_left;
     old_right = pos_right;
-    
+
+    //compute left motor speed from cmd_vel topic 
+    //contrain values to max speeds that robot can handle
+    speed_cmd_left = constrain(speed_cmd_left, -max_speed, max_speed);
+    //compute PID
+    PID_leftMotor.Compute();                                                 
+    // compute PWM value for left motor. Check constant definition comments for more information. I really don't understand how this works...
+    PWM_leftMotor = constrain(((speed_req_left+sgn(speed_req_left)*min_speed_cmd)/speed_to_pwm_ratio) + (speed_cmd_left/speed_to_pwm_ratio), -255, 255);
+
+    if (speed_req_left == 0) {
+      //stop left mootor
+      runMotorLeft("f", 0);
+    }
+    else if (speed_req_left > 0) {
+      //run forwards
+      runMotorLeft("f", PWM_leftMotor);
+    }
+    else {
+      //run backwards
+      runMotorLeft("r", abs(PWM_leftMotor));
+    }
+
+    speed_cmd_right = constrain(speed_cmd_right, -max_speed, max_speed);    
+    PID_rightMotor.Compute();                                                 
+    PWM_rightMotor = constrain(((speed_req_right+sgn(speed_req_right)*min_speed_cmd)/speed_to_pwm_ratio) + (speed_cmd_right/speed_to_pwm_ratio), -255, 255); 
+
+    if (speed_req_right == 0) {
+      //stop left mootor
+      runMotorRight("f", 0);
+    }
+    else if (speed_req_right > 0) {
+      //run forwards
+      runMotorRight("f", PWM_leftMotor);
+    }
+    else {
+      //run backwards
+      runMotorRight("r", abs(PWM_leftMotor));
+    }
 
     publishSpeed(LOOPTIME);
+
   }
 }
 
