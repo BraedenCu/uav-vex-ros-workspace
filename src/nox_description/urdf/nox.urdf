@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+	<robot name="nox">
+		<link name="base_link">
+		</link>
+
+		<link name="zed">
+		</link>
+
+		<joint name="base_link_to_zed" type="fixed">
+			<parent link="base_link"/>
+			<child link="zed"/>
+			<origin xyz="0.0 0.0 0.3" rpy="0.0 0.0 3.14192" />
+			<axis xyz="0 0 0"/>
+		</joint>
+		
+	</robot>
