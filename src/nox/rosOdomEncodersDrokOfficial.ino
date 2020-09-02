@@ -98,8 +98,8 @@ void setup() {
   PID_leftMotor.SetMode(AUTOMATIC);
   PID_rightMotor.SetMode(AUTOMATIC); 
 
-  //setLeftMotorSpeed(0, 's');
-  //setRightMotorSpeed(0, 's');
+  runMotorLeft("f", 0);
+  runMotorRight("f", 0);
 
 }
 
@@ -154,6 +154,26 @@ float getEncoderTwoPosition() {
 }
 
 
-void runMotor(char dir, int speed) {
-  
+void runMotorRight(char dir, int speed) {
+  analogWrite(enA, speed);
+  if (dir == "f") {
+    digitalWrite(in1, HIGH);
+    digitalWrite(in2, LOW);
+  }
+  if (dir == "r") {
+    digitalWrite(in1, LOW);
+    digitalWrite(in2, HIGH);
+  }
+}
+
+void runMotorLeft(char dir, int speed) {
+  analogWrite(enB, speed);
+  if (dir == "f") {
+    digitalWrite(in3, HIGH);
+    digitalWrite(in4, LOW);
+  }
+  if (dir == "r") {
+    digitalWrite(in3, LOW);
+    digitalWrite(in4, HIGH);
+  }
 }

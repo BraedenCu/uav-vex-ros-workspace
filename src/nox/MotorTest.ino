@@ -17,5 +17,5 @@ void setup() {
 void loop() {
     digitalWrite(in1, HIGH);
     digitalWrite(in2, LOW);
-
+    analogWrite(enA, 0);
 }
