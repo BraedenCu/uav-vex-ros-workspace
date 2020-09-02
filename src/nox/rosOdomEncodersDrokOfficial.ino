@@ -82,21 +82,13 @@ void setup() {
   nh.advertise(speed_pub);
 
   //initialize motor controller
-  //pinMode(enA, OUTPUT);
-  //pinMode(in1, OUTPUT);
-  //pinMode(in2, OUTPUT);
+  pinMode(enA, OUTPUT);
+  pinMode(in1, OUTPUT);
+  pinMode(in2, OUTPUT);
 
-  //pinMode(enB, OUTPUT);
-  //pinMode(in3, OUTPUT);
-  //pinMode(in4, OUTPUT);
-
-  //pinMode(enC, OUTPUT);
-  //pinMode(in5, OUTPUT);
-  //pinMode(in6, OUTPUT);
-
-  //pinMode(enD, OUTPUT);
-  //pinMode(in7, OUTPUT);
-  //pinMode(in8, OUTPUT);
+  pinMode(enB, OUTPUT);
+  pinMode(in3, OUTPUT);
+  pinMode(in4, OUTPUT);
 
   //setting PID parameters
   PID_leftMotor.SetSampleTime(95);
@@ -159,4 +151,9 @@ float getEncoderTwoPosition() {
     oldPosition2 = newPosition2;
   }
   return newPosition2;
+}
+
+
+void runMotor(char dir, int speed) {
+  
 }
