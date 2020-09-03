@@ -1,5 +1,5 @@
 roslaunch zed_nodelet_example zed_laserscan_nodelet.launch camera_model:=zed /zed/scan:=/scan /zed/zed_nodelet/odom:=/odom
-rosrun map_server map_server /home/dev/catkin_ws/src/cleaningbot_2dnav/maps/maphouse.yaml
+rosrun map_server map_server /home/dev/catkin_ws/src/cleaningbot_2dnav/maps/drawing.yaml
 rosrun map_server map_saver -f name_of_map
 rosrun gmapping slam_gmapping scan:=base_scan
 rosrun rosserial_arduino serial_node.py /dev/ttyACM0

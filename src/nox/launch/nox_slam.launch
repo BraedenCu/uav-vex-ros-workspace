@@ -2,10 +2,10 @@
 	<include file="$(find nox)/launch/nox_navigation.launch" />
 
 	<!--  start my map  -->
-	<node name="map_server" pkg="map_server" type="map_server" args="/home/dev/catkin_ws/src/cleaningbot_2dnav/maps/maphouse.yaml" />
+	<!--node name="map_server" pkg="map_server" type="map_server" args="/home/dev/catkin_ws/src/cleaningbot_2dnav/maps/maphouse.yaml" /-->
 
 	<!-- gmapping   -->
-	<!--node name="slam_gmapping" pkg="gmapping" type="slam_gmapping" output="screen"/-->
+	<node name="slam_gmapping" pkg="gmapping" type="slam_gmapping" output="screen"/>
 
 	<!--  launch rviz config -->
 	<node name="rviz" pkg="rviz" type="rviz" args="-d $(find nox)/cfg/rviz_slam_base_local_planner.rviz" required="true" />
