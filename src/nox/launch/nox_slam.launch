@@ -6,8 +6,13 @@
 
 	<!-- gmapping   -->
 	<node name="slam_gmapping" pkg="gmapping" type="slam_gmapping" output="screen"/>
+		<param name="odom_frame" value="odom"/>
+    	<param name="base_frame" value="base_link"/>
+    	<param name="map_frame" value="map"/>
+
+		<remap from="scan" to="scan"/>
 
 	<!--  launch rviz config -->
 	<node name="rviz" pkg="rviz" type="rviz" args="-d $(find nox)/cfg/rviz_slam_base_local_planner.rviz" required="true" />
-		<param name="scan" value="/zed/scan" />
+		<param name="scan" value="scan" />
 </launch>
