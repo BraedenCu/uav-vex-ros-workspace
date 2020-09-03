@@ -135,7 +135,7 @@ void loop() {
     PWM_leftMotor = constrain(((speed_req_left+sgn(speed_req_left)*min_speed_cmd)/speed_to_pwm_ratio) + (speed_cmd_left/speed_to_pwm_ratio), -255, 255);
 
     if (speed_req_left == 0) {
-      //stop left mootor
+      //stop left motor
       runMotorLeft("f", 0);
     }
     else if (speed_req_left > 0) {
@@ -152,7 +152,7 @@ void loop() {
     PWM_rightMotor = constrain(((speed_req_right+sgn(speed_req_right)*min_speed_cmd)/speed_to_pwm_ratio) + (speed_cmd_right/speed_to_pwm_ratio), -255, 255); 
 
     if (speed_req_right == 0) {
-      //stop left mootor
+      //stop left motor
       runMotorRight("f", 0);
     }
     else if (speed_req_right > 0) {
