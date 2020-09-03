@@ -26,8 +26,9 @@
 	<include file="$(find zed_wrapper)/launch/zed_no_tf.launch"/>
 
 	<node name="depthimage_to_laserscan" pkg="depthimage_to_laserscan" type="depthimage_to_laserscan" > 
-		<remap from="image" to="/depth/depth_registered"/>
+		<remap from="image" to="/zed_node/depth/depth_registered"/>
 	</node>	
+
 	<!--
 	<include file="$(find zed_nodelet_example)/launch/zed_laserscan_nodelet.launch">
   		<arg name="camera_model" value="zed"/>

@@ -1,6 +1,6 @@
 <launch>
 	<include file="$(find nox)/launch/nox_navigation.launch" />
-
+	<include file="$(find nox)/launch/nox_bringup.launch" />
 	<!--  start my map  -->
 	<!--node name="map_server" pkg="map_server" type="map_server" args="/home/dev/catkin_ws/src/cleaningbot_2dnav/maps/maphouse.yaml" /-->
 
@@ -9,5 +9,5 @@
 
 	<!--  launch rviz config -->
 	<node name="rviz" pkg="rviz" type="rviz" args="-d $(find nox)/cfg/rviz_slam_base_local_planner.rviz" required="true" />
-
+		<param name="scan" value="/zed/scan" />
 </launch>
