@@ -33,6 +33,7 @@
              <!-- THIS ACTUALLY WORKS TO REMAP /zed/scan to /scan for nav stack -->
              <remap from="scan" to="/scan"/>
         </node>
+		
 	<!--
 	<node name="depthimage_to_laserscan" pkg="depthimage_to_laserscan" type="depthimage_to_laserscan" > 
 		<remap from="image" to="/zed_node/depth/depth_registered"/>
