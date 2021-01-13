@@ -1,0 +1,1 @@
+/usr/bin/c++    -rdynamic CMakeFiles/vexai_node.dir/src/encoderToOdom.cpp.o  -o /home/dev/catkin_ws/devel/lib/vexai/vexai_node 
