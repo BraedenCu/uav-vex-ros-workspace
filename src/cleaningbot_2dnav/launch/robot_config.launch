@@ -1,9 +1,0 @@
-<launch>
-
- <include file="$(find zed_nodelet_example)/launch/zed_laserscan_nodelet.launch">
-  <arg name="camera_model" value="zed"/>
- </include>
- <remap from="scan" to="scan"/>
-
-</launch> 
-

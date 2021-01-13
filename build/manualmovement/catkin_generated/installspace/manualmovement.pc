@@ -1,8 +1,0 @@
-prefix=/home/dev/catkin_ws/install
-
-Name: manualmovement
-Description: Description of manualmovement
-Version: 0.0.0
-Cflags: 
-Libs: -L${prefix}/lib 
-Requires: 

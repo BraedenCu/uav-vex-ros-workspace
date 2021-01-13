@@ -2,5 +2,10 @@
     "files.associations": {
         "sstream": "cpp",
         "*.tcc": "cpp"
-    }
+    },
+    "python.autoComplete.extraPaths": [
+        "/home/dev/catkin_ws2/devel/lib/python2.7/dist-packages",
+        "/home/dev/catkin_ws/devel/lib/python2.7/dist-packages",
+        "/opt/ros/melodic/lib/python2.7/dist-packages"
+    ]
 }
