@@ -264,7 +264,7 @@ gtest/googlemock/preinstall: gtest/googlemock/gtest/preinstall
 gtest/googlemock/CMakeFiles/gmock_main.dir/all:
 	$(MAKE) -f gtest/googlemock/CMakeFiles/gmock_main.dir/build.make gtest/googlemock/CMakeFiles/gmock_main.dir/depend
 	$(MAKE) -f gtest/googlemock/CMakeFiles/gmock_main.dir/build.make gtest/googlemock/CMakeFiles/gmock_main.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/dev/catkin_ws/build/CMakeFiles --progress-num=30,31,32,33 "Built target gmock_main"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/dev/catkin_ws/build/CMakeFiles --progress-num=32,33,34,35 "Built target gmock_main"
 .PHONY : gtest/googlemock/CMakeFiles/gmock_main.dir/all
 
 # Build rule for subdir invocation for target.
@@ -296,7 +296,7 @@ clean: gtest/googlemock/CMakeFiles/gmock_main.dir/clean
 gtest/googlemock/CMakeFiles/gmock.dir/all:
 	$(MAKE) -f gtest/googlemock/CMakeFiles/gmock.dir/build.make gtest/googlemock/CMakeFiles/gmock.dir/depend
 	$(MAKE) -f gtest/googlemock/CMakeFiles/gmock.dir/build.make gtest/googlemock/CMakeFiles/gmock.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/dev/catkin_ws/build/CMakeFiles --progress-num=27,28,29 "Built target gmock"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/dev/catkin_ws/build/CMakeFiles --progress-num=29,30,31 "Built target gmock"
 .PHONY : gtest/googlemock/CMakeFiles/gmock.dir/all
 
 # Build rule for subdir invocation for target.
@@ -347,7 +347,7 @@ gtest/googlemock/gtest/preinstall:
 gtest/googlemock/gtest/CMakeFiles/gtest_main.dir/all: gtest/googlemock/gtest/CMakeFiles/gtest.dir/all
 	$(MAKE) -f gtest/googlemock/gtest/CMakeFiles/gtest_main.dir/build.make gtest/googlemock/gtest/CMakeFiles/gtest_main.dir/depend
 	$(MAKE) -f gtest/googlemock/gtest/CMakeFiles/gtest_main.dir/build.make gtest/googlemock/gtest/CMakeFiles/gtest_main.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/dev/catkin_ws/build/CMakeFiles --progress-num=36,37 "Built target gtest_main"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/dev/catkin_ws/build/CMakeFiles --progress-num=38,39 "Built target gtest_main"
 .PHONY : gtest/googlemock/gtest/CMakeFiles/gtest_main.dir/all
 
 # Build rule for subdir invocation for target.
@@ -379,7 +379,7 @@ clean: gtest/googlemock/gtest/CMakeFiles/gtest_main.dir/clean
 gtest/googlemock/gtest/CMakeFiles/gtest.dir/all:
 	$(MAKE) -f gtest/googlemock/gtest/CMakeFiles/gtest.dir/build.make gtest/googlemock/gtest/CMakeFiles/gtest.dir/depend
 	$(MAKE) -f gtest/googlemock/gtest/CMakeFiles/gtest.dir/build.make gtest/googlemock/gtest/CMakeFiles/gtest.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/dev/catkin_ws/build/CMakeFiles --progress-num=34,35 "Built target gtest"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/dev/catkin_ws/build/CMakeFiles --progress-num=36,37 "Built target gtest"
 .PHONY : gtest/googlemock/gtest/CMakeFiles/gtest.dir/all
 
 # Build rule for subdir invocation for target.
@@ -524,7 +524,7 @@ clean: dockerpublisher/CMakeFiles/std_msgs_generate_messages_nodejs.dir/clean
 dockerpublisher/CMakeFiles/publisher.dir/all:
 	$(MAKE) -f dockerpublisher/CMakeFiles/publisher.dir/build.make dockerpublisher/CMakeFiles/publisher.dir/depend
 	$(MAKE) -f dockerpublisher/CMakeFiles/publisher.dir/build.make dockerpublisher/CMakeFiles/publisher.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/dev/catkin_ws/build/CMakeFiles --progress-num=38,39 "Built target publisher"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/dev/catkin_ws/build/CMakeFiles --progress-num=40,41 "Built target publisher"
 .PHONY : dockerpublisher/CMakeFiles/publisher.dir/all
 
 # Include target in all.
@@ -1348,7 +1348,7 @@ clean: dockerpublisher/CMakeFiles/_dockerpublisher_generate_messages_check_deps_
 dockerpublisher/CMakeFiles/service.dir/all:
 	$(MAKE) -f dockerpublisher/CMakeFiles/service.dir/build.make dockerpublisher/CMakeFiles/service.dir/depend
 	$(MAKE) -f dockerpublisher/CMakeFiles/service.dir/build.make dockerpublisher/CMakeFiles/service.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/dev/catkin_ws/build/CMakeFiles --progress-num=40,41 "Built target service"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/dev/catkin_ws/build/CMakeFiles --progress-num=42,43 "Built target service"
 .PHONY : dockerpublisher/CMakeFiles/service.dir/all
 
 # Include target in all.
@@ -1545,7 +1545,7 @@ esp32communication/CMakeFiles/esp32communication_generate_messages_cpp.dir/all: 
 esp32communication/CMakeFiles/esp32communication_generate_messages_cpp.dir/all: esp32communication/CMakeFiles/_esp32communication_generate_messages_check_deps_can.dir/all
 	$(MAKE) -f esp32communication/CMakeFiles/esp32communication_generate_messages_cpp.dir/build.make esp32communication/CMakeFiles/esp32communication_generate_messages_cpp.dir/depend
 	$(MAKE) -f esp32communication/CMakeFiles/esp32communication_generate_messages_cpp.dir/build.make esp32communication/CMakeFiles/esp32communication_generate_messages_cpp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/dev/catkin_ws/build/CMakeFiles --progress-num=14,15 "Built target esp32communication_generate_messages_cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/dev/catkin_ws/build/CMakeFiles --progress-num=16,17 "Built target esp32communication_generate_messages_cpp"
 .PHONY : esp32communication/CMakeFiles/esp32communication_generate_messages_cpp.dir/all
 
 # Build rule for subdir invocation for target.
@@ -1579,7 +1579,7 @@ esp32communication/CMakeFiles/esp32communication_generate_messages_eus.dir/all: 
 esp32communication/CMakeFiles/esp32communication_generate_messages_eus.dir/all: esp32communication/CMakeFiles/_esp32communication_generate_messages_check_deps_can.dir/all
 	$(MAKE) -f esp32communication/CMakeFiles/esp32communication_generate_messages_eus.dir/build.make esp32communication/CMakeFiles/esp32communication_generate_messages_eus.dir/depend
 	$(MAKE) -f esp32communication/CMakeFiles/esp32communication_generate_messages_eus.dir/build.make esp32communication/CMakeFiles/esp32communication_generate_messages_eus.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/dev/catkin_ws/build/CMakeFiles --progress-num=16,17,18 "Built target esp32communication_generate_messages_eus"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/dev/catkin_ws/build/CMakeFiles --progress-num=18,19,20 "Built target esp32communication_generate_messages_eus"
 .PHONY : esp32communication/CMakeFiles/esp32communication_generate_messages_eus.dir/all
 
 # Build rule for subdir invocation for target.
@@ -1814,7 +1814,7 @@ esp32communication/CMakeFiles/esp32communication_generate_messages_nodejs.dir/al
 esp32communication/CMakeFiles/esp32communication_generate_messages_nodejs.dir/all: esp32communication/CMakeFiles/_esp32communication_generate_messages_check_deps_can.dir/all
 	$(MAKE) -f esp32communication/CMakeFiles/esp32communication_generate_messages_nodejs.dir/build.make esp32communication/CMakeFiles/esp32communication_generate_messages_nodejs.dir/depend
 	$(MAKE) -f esp32communication/CMakeFiles/esp32communication_generate_messages_nodejs.dir/build.make esp32communication/CMakeFiles/esp32communication_generate_messages_nodejs.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/dev/catkin_ws/build/CMakeFiles --progress-num=21,22 "Built target esp32communication_generate_messages_nodejs"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/dev/catkin_ws/build/CMakeFiles --progress-num=23,24 "Built target esp32communication_generate_messages_nodejs"
 .PHONY : esp32communication/CMakeFiles/esp32communication_generate_messages_nodejs.dir/all
 
 # Build rule for subdir invocation for target.
@@ -1848,7 +1848,7 @@ esp32communication/CMakeFiles/esp32communication_generate_messages_py.dir/all: e
 esp32communication/CMakeFiles/esp32communication_generate_messages_py.dir/all: esp32communication/CMakeFiles/_esp32communication_generate_messages_check_deps_can.dir/all
 	$(MAKE) -f esp32communication/CMakeFiles/esp32communication_generate_messages_py.dir/build.make esp32communication/CMakeFiles/esp32communication_generate_messages_py.dir/depend
 	$(MAKE) -f esp32communication/CMakeFiles/esp32communication_generate_messages_py.dir/build.make esp32communication/CMakeFiles/esp32communication_generate_messages_py.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/dev/catkin_ws/build/CMakeFiles --progress-num=23,24,25,26 "Built target esp32communication_generate_messages_py"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/dev/catkin_ws/build/CMakeFiles --progress-num=25,26,27,28 "Built target esp32communication_generate_messages_py"
 .PHONY : esp32communication/CMakeFiles/esp32communication_generate_messages_py.dir/all
 
 # Build rule for subdir invocation for target.
@@ -1882,7 +1882,7 @@ esp32communication/CMakeFiles/esp32communication_generate_messages_lisp.dir/all:
 esp32communication/CMakeFiles/esp32communication_generate_messages_lisp.dir/all: esp32communication/CMakeFiles/_esp32communication_generate_messages_check_deps_can.dir/all
 	$(MAKE) -f esp32communication/CMakeFiles/esp32communication_generate_messages_lisp.dir/build.make esp32communication/CMakeFiles/esp32communication_generate_messages_lisp.dir/depend
 	$(MAKE) -f esp32communication/CMakeFiles/esp32communication_generate_messages_lisp.dir/build.make esp32communication/CMakeFiles/esp32communication_generate_messages_lisp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/dev/catkin_ws/build/CMakeFiles --progress-num=19,20 "Built target esp32communication_generate_messages_lisp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/dev/catkin_ws/build/CMakeFiles --progress-num=21,22 "Built target esp32communication_generate_messages_lisp"
 .PHONY : esp32communication/CMakeFiles/esp32communication_generate_messages_lisp.dir/all
 
 # Build rule for subdir invocation for target.
@@ -1912,6 +1912,7 @@ clean: esp32communication/CMakeFiles/esp32communication_generate_messages_lisp.d
 
 # Convenience name for "all" pass in the directory.
 vexai/all: vexai/CMakeFiles/vexai_generate_messages.dir/all
+vexai/all: vexai/CMakeFiles/encoderToOdom.dir/all
 
 .PHONY : vexai/all
 
@@ -1926,6 +1927,7 @@ vexai/clean: vexai/CMakeFiles/vexai_generate_messages_lisp.dir/clean
 vexai/clean: vexai/CMakeFiles/vexai_genlisp.dir/clean
 vexai/clean: vexai/CMakeFiles/vexai_generate_messages_nodejs.dir/clean
 vexai/clean: vexai/CMakeFiles/vexai_generate_messages_py.dir/clean
+vexai/clean: vexai/CMakeFiles/encoderToOdom.dir/clean
 vexai/clean: vexai/CMakeFiles/vexai_geneus.dir/clean
 vexai/clean: vexai/CMakeFiles/vexai_genpy.dir/clean
 vexai/clean: vexai/CMakeFiles/_vexai_generate_messages_check_deps_Encoder.dir/clean
@@ -1945,7 +1947,7 @@ vexai/CMakeFiles/vexai_generate_messages_eus.dir/all: dockerpublisher/CMakeFiles
 vexai/CMakeFiles/vexai_generate_messages_eus.dir/all: vexai/CMakeFiles/_vexai_generate_messages_check_deps_Encoder.dir/all
 	$(MAKE) -f vexai/CMakeFiles/vexai_generate_messages_eus.dir/build.make vexai/CMakeFiles/vexai_generate_messages_eus.dir/depend
 	$(MAKE) -f vexai/CMakeFiles/vexai_generate_messages_eus.dir/build.make vexai/CMakeFiles/vexai_generate_messages_eus.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/dev/catkin_ws/build/CMakeFiles --progress-num=43,44 "Built target vexai_generate_messages_eus"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/dev/catkin_ws/build/CMakeFiles --progress-num=45,46 "Built target vexai_generate_messages_eus"
 .PHONY : vexai/CMakeFiles/vexai_generate_messages_eus.dir/all
 
 # Build rule for subdir invocation for target.
@@ -2074,7 +2076,7 @@ vexai/CMakeFiles/vexai_generate_messages_cpp.dir/all: dockerpublisher/CMakeFiles
 vexai/CMakeFiles/vexai_generate_messages_cpp.dir/all: vexai/CMakeFiles/_vexai_generate_messages_check_deps_Encoder.dir/all
 	$(MAKE) -f vexai/CMakeFiles/vexai_generate_messages_cpp.dir/build.make vexai/CMakeFiles/vexai_generate_messages_cpp.dir/depend
 	$(MAKE) -f vexai/CMakeFiles/vexai_generate_messages_cpp.dir/build.make vexai/CMakeFiles/vexai_generate_messages_cpp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/dev/catkin_ws/build/CMakeFiles --progress-num=42 "Built target vexai_generate_messages_cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/dev/catkin_ws/build/CMakeFiles --progress-num=44 "Built target vexai_generate_messages_cpp"
 .PHONY : vexai/CMakeFiles/vexai_generate_messages_cpp.dir/all
 
 # Build rule for subdir invocation for target.
@@ -2148,7 +2150,7 @@ vexai/CMakeFiles/vexai_generate_messages_lisp.dir/all: dockerpublisher/CMakeFile
 vexai/CMakeFiles/vexai_generate_messages_lisp.dir/all: vexai/CMakeFiles/_vexai_generate_messages_check_deps_Encoder.dir/all
 	$(MAKE) -f vexai/CMakeFiles/vexai_generate_messages_lisp.dir/build.make vexai/CMakeFiles/vexai_generate_messages_lisp.dir/depend
 	$(MAKE) -f vexai/CMakeFiles/vexai_generate_messages_lisp.dir/build.make vexai/CMakeFiles/vexai_generate_messages_lisp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/dev/catkin_ws/build/CMakeFiles --progress-num=45 "Built target vexai_generate_messages_lisp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/dev/catkin_ws/build/CMakeFiles --progress-num=47 "Built target vexai_generate_messages_lisp"
 .PHONY : vexai/CMakeFiles/vexai_generate_messages_lisp.dir/all
 
 # Build rule for subdir invocation for target.
@@ -2213,7 +2215,7 @@ vexai/CMakeFiles/vexai_generate_messages_nodejs.dir/all: dockerpublisher/CMakeFi
 vexai/CMakeFiles/vexai_generate_messages_nodejs.dir/all: vexai/CMakeFiles/_vexai_generate_messages_check_deps_Encoder.dir/all
 	$(MAKE) -f vexai/CMakeFiles/vexai_generate_messages_nodejs.dir/build.make vexai/CMakeFiles/vexai_generate_messages_nodejs.dir/depend
 	$(MAKE) -f vexai/CMakeFiles/vexai_generate_messages_nodejs.dir/build.make vexai/CMakeFiles/vexai_generate_messages_nodejs.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/dev/catkin_ws/build/CMakeFiles --progress-num=46 "Built target vexai_generate_messages_nodejs"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/dev/catkin_ws/build/CMakeFiles --progress-num=48 "Built target vexai_generate_messages_nodejs"
 .PHONY : vexai/CMakeFiles/vexai_generate_messages_nodejs.dir/all
 
 # Build rule for subdir invocation for target.
@@ -2246,7 +2248,7 @@ vexai/CMakeFiles/vexai_generate_messages_py.dir/all: dockerpublisher/CMakeFiles/
 vexai/CMakeFiles/vexai_generate_messages_py.dir/all: vexai/CMakeFiles/_vexai_generate_messages_check_deps_Encoder.dir/all
 	$(MAKE) -f vexai/CMakeFiles/vexai_generate_messages_py.dir/build.make vexai/CMakeFiles/vexai_generate_messages_py.dir/depend
 	$(MAKE) -f vexai/CMakeFiles/vexai_generate_messages_py.dir/build.make vexai/CMakeFiles/vexai_generate_messages_py.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/dev/catkin_ws/build/CMakeFiles --progress-num=47,48 "Built target vexai_generate_messages_py"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/dev/catkin_ws/build/CMakeFiles --progress-num=49,50 "Built target vexai_generate_messages_py"
 .PHONY : vexai/CMakeFiles/vexai_generate_messages_py.dir/all
 
 # Build rule for subdir invocation for target.
@@ -2268,6 +2270,43 @@ vexai/CMakeFiles/vexai_generate_messages_py.dir/clean:
 
 # clean rule for target.
 clean: vexai/CMakeFiles/vexai_generate_messages_py.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target vexai/CMakeFiles/encoderToOdom.dir
+
+# All Build rule for target.
+vexai/CMakeFiles/encoderToOdom.dir/all:
+	$(MAKE) -f vexai/CMakeFiles/encoderToOdom.dir/build.make vexai/CMakeFiles/encoderToOdom.dir/depend
+	$(MAKE) -f vexai/CMakeFiles/encoderToOdom.dir/build.make vexai/CMakeFiles/encoderToOdom.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/dev/catkin_ws/build/CMakeFiles --progress-num=14,15 "Built target encoderToOdom"
+.PHONY : vexai/CMakeFiles/encoderToOdom.dir/all
+
+# Include target in all.
+all: vexai/CMakeFiles/encoderToOdom.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+vexai/CMakeFiles/encoderToOdom.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/dev/catkin_ws/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 vexai/CMakeFiles/encoderToOdom.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/dev/catkin_ws/build/CMakeFiles 0
+.PHONY : vexai/CMakeFiles/encoderToOdom.dir/rule
+
+# Convenience name for target.
+encoderToOdom: vexai/CMakeFiles/encoderToOdom.dir/rule
+
+.PHONY : encoderToOdom
+
+# clean rule for target.
+vexai/CMakeFiles/encoderToOdom.dir/clean:
+	$(MAKE) -f vexai/CMakeFiles/encoderToOdom.dir/build.make vexai/CMakeFiles/encoderToOdom.dir/clean
+.PHONY : vexai/CMakeFiles/encoderToOdom.dir/clean
+
+# clean rule for target.
+clean: vexai/CMakeFiles/encoderToOdom.dir/clean
 
 .PHONY : clean
 

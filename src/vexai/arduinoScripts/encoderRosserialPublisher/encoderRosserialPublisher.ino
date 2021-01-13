@@ -29,9 +29,11 @@ float leftEncoderData = 0.00;
 
 ros::NodeHandle nh;
 
+vexai::Encoder encoder_msg;
 std_msgs::String str_msg;
 std_msgs::Float32 float_msg;
-ros::Publisher encoderData("encoderData", &float_msg);
+
+ros::Publisher encoderData("encoderData", &encoder_msg);
 
 void setup()
 {
@@ -53,8 +55,8 @@ void setup()
 void loop()
 {
   leftEncoderData = _LeftEncoderTicks/8192.0;
-  float_msg.data = leftEncoderData;
-  encoderData.publish( &float_msg );
+  encoder_msg.leftEncoderData = leftEncoderData;
+  encoderData.publish( &encoder_msg );
   nh.spinOnce();
   delay(10);
 }

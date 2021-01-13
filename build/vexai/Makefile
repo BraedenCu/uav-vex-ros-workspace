@@ -318,6 +318,21 @@ vexai_generate_messages_py/fast:
 .PHONY : vexai_generate_messages_py/fast
 
 # Convenience name for target.
+vexai/CMakeFiles/encoderToOdom.dir/rule:
+	cd /home/dev/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 vexai/CMakeFiles/encoderToOdom.dir/rule
+.PHONY : vexai/CMakeFiles/encoderToOdom.dir/rule
+
+# Convenience name for target.
+encoderToOdom: vexai/CMakeFiles/encoderToOdom.dir/rule
+
+.PHONY : encoderToOdom
+
+# fast build rule for target.
+encoderToOdom/fast:
+	cd /home/dev/catkin_ws/build && $(MAKE) -f vexai/CMakeFiles/encoderToOdom.dir/build.make vexai/CMakeFiles/encoderToOdom.dir/build
+.PHONY : encoderToOdom/fast
+
+# Convenience name for target.
 vexai/CMakeFiles/vexai_geneus.dir/rule:
 	cd /home/dev/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 vexai/CMakeFiles/vexai_geneus.dir/rule
 .PHONY : vexai/CMakeFiles/vexai_geneus.dir/rule
@@ -362,6 +377,33 @@ _vexai_generate_messages_check_deps_Encoder/fast:
 	cd /home/dev/catkin_ws/build && $(MAKE) -f vexai/CMakeFiles/_vexai_generate_messages_check_deps_Encoder.dir/build.make vexai/CMakeFiles/_vexai_generate_messages_check_deps_Encoder.dir/build
 .PHONY : _vexai_generate_messages_check_deps_Encoder/fast
 
+src/encoderToOdom.o: src/encoderToOdom.cpp.o
+
+.PHONY : src/encoderToOdom.o
+
+# target to build an object file
+src/encoderToOdom.cpp.o:
+	cd /home/dev/catkin_ws/build && $(MAKE) -f vexai/CMakeFiles/encoderToOdom.dir/build.make vexai/CMakeFiles/encoderToOdom.dir/src/encoderToOdom.cpp.o
+.PHONY : src/encoderToOdom.cpp.o
+
+src/encoderToOdom.i: src/encoderToOdom.cpp.i
+
+.PHONY : src/encoderToOdom.i
+
+# target to preprocess a source file
+src/encoderToOdom.cpp.i:
+	cd /home/dev/catkin_ws/build && $(MAKE) -f vexai/CMakeFiles/encoderToOdom.dir/build.make vexai/CMakeFiles/encoderToOdom.dir/src/encoderToOdom.cpp.i
+.PHONY : src/encoderToOdom.cpp.i
+
+src/encoderToOdom.s: src/encoderToOdom.cpp.s
+
+.PHONY : src/encoderToOdom.s
+
+# target to generate assembly for a file
+src/encoderToOdom.cpp.s:
+	cd /home/dev/catkin_ws/build && $(MAKE) -f vexai/CMakeFiles/encoderToOdom.dir/build.make vexai/CMakeFiles/encoderToOdom.dir/src/encoderToOdom.cpp.s
+.PHONY : src/encoderToOdom.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -370,8 +412,8 @@ help:
 	@echo "... depend"
 	@echo "... install/strip"
 	@echo "... vexai_generate_messages_eus"
-	@echo "... vexai_gennodejs"
 	@echo "... rebuild_cache"
+	@echo "... vexai_gennodejs"
 	@echo "... vexai_gencpp"
 	@echo "... test"
 	@echo "... _catkin_empty_exported_target"
@@ -384,10 +426,14 @@ help:
 	@echo "... vexai_generate_messages_nodejs"
 	@echo "... install/local"
 	@echo "... vexai_generate_messages_py"
+	@echo "... encoderToOdom"
 	@echo "... vexai_geneus"
 	@echo "... vexai_genpy"
 	@echo "... _vexai_generate_messages_check_deps_Encoder"
 	@echo "... edit_cache"
+	@echo "... src/encoderToOdom.o"
+	@echo "... src/encoderToOdom.i"
+	@echo "... src/encoderToOdom.s"
 .PHONY : help
 
 

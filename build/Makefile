@@ -974,6 +974,19 @@ vexai_generate_messages_py/fast:
 .PHONY : vexai_generate_messages_py/fast
 
 #=============================================================================
+# Target rules for targets named encoderToOdom
+
+# Build rule for target.
+encoderToOdom: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 encoderToOdom
+.PHONY : encoderToOdom
+
+# fast build rule for target.
+encoderToOdom/fast:
+	$(MAKE) -f vexai/CMakeFiles/encoderToOdom.dir/build.make vexai/CMakeFiles/encoderToOdom.dir/build
+.PHONY : encoderToOdom/fast
+
+#=============================================================================
 # Target rules for targets named vexai_geneus
 
 # Build rule for target.
@@ -1087,6 +1100,7 @@ help:
 	@echo "... vexai_genlisp"
 	@echo "... vexai_generate_messages_nodejs"
 	@echo "... vexai_generate_messages_py"
+	@echo "... encoderToOdom"
 	@echo "... vexai_geneus"
 	@echo "... vexai_genpy"
 	@echo "... _vexai_generate_messages_check_deps_Encoder"
